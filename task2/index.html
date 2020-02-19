@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header,
+        .footer {
+            height: 40px;
+        }
+
+        .header {
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: green;
+            display: flex;
+        }
+
+        .footer__text {
+            margin: auto;
+        }
+
+        .navigation {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .navigation__item {
+            margin-right: 10px;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        .dashboard {
+            flex-grow: 1;
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .news {
+            width: 200px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <ul class="navigation">
+                <li class="navigation__item">About</li>
+                <li class="navigation__item">Products</li>
+                <li class="navigation__item">Contacts</li>
+            </ul>
+        </header>
+        <main class="content">
+            <section class="dashboard">
+                <h2>I can use Flaxbox!!!</h2>
+            </section>
+            <aside class="news">
+                <h2>News</h2>
+                <ul>
+                    <li>news 1</li>
+                    <li>news 2</li>
+                    <li>news 3</li>
+                </ul>
+            </aside>
+        </main>
+        <footer class="footer"><span class="footer__text">Footer</span></footer>
+    </div>
+</body>
+
+</html>
